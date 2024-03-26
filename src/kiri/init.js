@@ -2963,12 +2963,6 @@ gapp.register("kiri.init", [], (root, exports) => {
             $('tool-selector').onclick = event.bind("tool.show", "select");
         }
 
-        // warn users they are running a beta release
-        if (kiri.beta && kiri.beta > 0 && sdb.kiri_beta != kiri.beta) {
-            api.show.alert("this is a beta / development release");
-            sdb.kiri_beta = kiri.beta;
-        }
-
         // add palette3 edit button after filament source selector
         {
             let randomId = Math.round(Math.random() * 0xffffffffffff).toString(16);

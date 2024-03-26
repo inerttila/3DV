@@ -1,25 +1,4 @@
 {
-    "name": "grid-apps",
-    "version": "4.0.1D",
-    "description": "grid.space 3d slice & modeling tools",
-    "author": "Stewart Allen <sa@grid.space>",
-    "license": "MIT",
-    "private": false,
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/gridspace/apps.git"
-    },
-    "keywords": [
-        "grid.space",
-        "kiri:moto",
-        "kirimoto",
-        "kiri",
-        "3d",
-        "CAM",
-        "laser",
-        "gcode",
-        "slicer"
-    ],
     "dependencies": {
         "@fortawesome/fontawesome-free": "^6.1.1",
         "@tweenjs/tween.js": "^16.6.0",

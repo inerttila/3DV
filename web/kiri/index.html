@@ -16,7 +16,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta http-equiv="origin-trial" content="AqowoIyLrJdKrT7wgV7OtFshD8JyLU2i6Y9FN+2z4ftYXDUUTAlEkJmaRAZKZP0Lmy+GoJRoWxL3Mo6FkUOLOQAAAAB0eyJvcmlnaW4iOiJodHRwczovL2dyaWQuc3BhY2U6NDQzIiwiZmVhdHVyZSI6IlVucmVzdHJpY3RlZFNoYXJlZEFycmF5QnVmZmVyIiwiZXhwaXJ5IjoxNzE5MzU5OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Kiri:Moto</title>
+    <title>inert</title>
     <link rel="icon" href="/kiri/favicon.ico">
     <link rel="apple-touch-icon" href="/kiri/favicon-mobile.png">
     <link rel="stylesheet" type="text/css" href="/kiri/index.css?{{version}}">
@@ -35,15 +35,14 @@
     <div id="top" class="f-row">
         <div id="app-mode">
             <div id="mode-info" class="f-row">
-                <label>Mode</label><div id="app-mode-name"></div>
-                <label>Device</label><div id="mode-device"></div>
-                <label>Profile</label><div id="mode-profile"></div>
+                <div id="app-mode-name"></div>
+                <div id="mode-device"></div>
+                <div id="mode-profile"></div>
             </div>
         </div>
         <div class="grow"></div>
         <div id="app-name" class="f-col a-center">
-            <div>Kiri:Moto</div>
-            <div id="app-info">version</div>
+            <div id="app-info"></div>
         </div>
         <div id="doit" class="f-row a-center">
             <button id="undo"><i class="fas fa-undo-alt"></i></button>
@@ -54,11 +53,9 @@
             <i class="fa-solid fa-maximize"></i>
         </div>
         <div id="app-acct">
-            <i class="fas fa-user-cog"></i>
             <div id="acct-pop" class="f-col">
                 <div id="acct-menu" class="f-col">
                     <div id="acct-lang">
-                        <label><i class="fas fa-caret-left"></i><span class="grow">&nbsp;</span><span lk="language">language</span></label>
                         <div id="lang-pop" class="f-col">
                             <div id="lset-zh">简体中文</div>
                             <div id="lset-da">dansk</div>
@@ -71,10 +68,8 @@
                         </div>
                     </div>
                     <div id="acct-export" class="f-col a-end">
-                        <label lk="export">export</label>
                     </div>
                     <div id="acct-help" class="f-col a-end">
-                        <label lk="help">help</label>
                     </div>
                 </div>
             </div>
@@ -85,7 +80,6 @@
         <div id="progress"><div id="progbar"><div id="progtxt">loading</div></div></div>
         <div id="mid-lcol" class="f-col j-center noshow">
             <div id="lt-back" class="lt-menu lt-enabled">
-                <i class="fas fa-arrow-circle-left"></i>
             </div>
             <div id="lt-options" class="lt-menu lt-enabled">
                 <div id="lt-trash"><i class="fas fa-trash"></i></div>
@@ -95,15 +89,11 @@
             <div id="lt-top">
                 <div id="float-tools" class="f-col movable">
                     <div id="float-tools-title" class="title mover">
-                        <label id="ft-label" class="grow">title bar</label>
                         <div id="float-tools-close" class="closer"><i class="fas fa-times"></i></div>
                     </div>
                     <div class="body f-row">
                         <div class="f-col menu">
-                            <div lkt="rotate" class="tictac" select="ft-rotate" label="ft-label"><i class="fas fa-sync-alt"></i></div>
-                            <div lkt="scale" class="tictac" select="ft-scale" label="ft-label"><i class="fas fa-expand"></i></div>
-                            <div lkt="mesh" class="tictac" select="ft-mesh" label="ft-label"><i class="fas fa-dice-d20"></i></div>
-                            <div lkt="select" class="tictac" select="ft-select" label="ft-label"><i class="fas fa-mouse-pointer"></i></div>
+
                         </div>
                         <div id="ft-scale" class="grow grid">
                             <div><label class="middle">X</label><input id="lock_x" type="checkbox" checked></div>
@@ -291,23 +281,7 @@
                 <div id="modal-box" class="f-col">
 
                 <div class="mod-top f-row"><div id="mod-x"><i class="fas fa-times"></i></div></div>
-                <div id="mod-help" class="mdialog f-col">
-                    <div class="f-row j-center title">
-                        <label>Kiri:Moto Help</label>
-                    </div>
-                    <div class="f-col">
-                        <a target="_rsc" href="https://docs.grid.space/projects/kiri-moto"><i class="fas fa-question-circle"></i>Kiri:Moto Full Documentation</a>
-                        <a href="https://youtu.be/08795Sj22QE" target="youtube"><i class="fab fa-youtube"></i>Video Guide to Kiri:Moto 2.5</a>
-                        <a target="_rsc" href="https://www.youtube.com/c/GridSpace/videos"><i class="fab fa-youtube"></i>YouTube Channel</a>
-                        <a target="_rsc" href="https://discord.gg/suyCCgr"><i class="fab fa-discord"></i> Discord Live Chat</a>
-                        <a target="_rsc" href="https://forum.grid.space"><i class="fab fa-discourse"></i> Discourse Forums</a>
-                        <a target="_rsc" href="https://twitter.com/grid_space_3d"><i class="fab fa-twitter"></i> Follow on Twitter</a>
-                        <a target="_rsc" href="https://paypal.me/gridspace3d?locale.x=en_US"><i class="fab fa-paypal"></i> Donations are welcome!</a>
-                    </div>
-                    <div class="f-row j-center">
-                        <label id="kiri-version"></label>
-                    </div>
-                </div>
+
                 <div id="mod-setup" class="mdialog f-row">
                     <div class="f-col left a-stretch">
                         <label class="header" lk="dm_sldt">select a device type</label>
