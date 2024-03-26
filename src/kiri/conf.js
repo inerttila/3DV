@@ -738,6 +738,12 @@ const conf = exports({
             LASER: {}
         },
         // current device name by mode
+        filter:{
+            FDM: "Any.Generic.Marlin",
+            SLA: "Anycubic.Photon",
+            CAM: "Any.Generic.Grbl",
+            LASER: "Any.Generic.Laser"
+        },
         // stored device by mode
         cdev: {
             FDM: null,
